@@ -1,0 +1,11 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Новости в мире</h1>
+        <a href=""><li><button class="btn btn-warning"><i class="fas fa-plus-circle"></i>Создать доску</button></li></a>
+        {{ news }}
+    </div>
+{% endblock %}
