@@ -1,0 +1,7 @@
+services:
+  web: 
+    build:
+      context: forum
+      target: builder
+    ports: 
+      - '8000:8000'

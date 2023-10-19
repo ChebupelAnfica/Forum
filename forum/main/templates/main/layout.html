@@ -18,11 +18,10 @@
         <h3>Навигация</h3>
         <ul>
             <a href="{% url 'main:home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
-            <a href="{% url 'main:news' %}"><li><i class="fa-regular fa-newspaper"></i> Новости</li></a>
-            <a href="{% url 'main:games' %}"><li><i class="fa-solid fa-gamepad"></i> Игры</li></a>
-            <a href=""><li><i class="fa-brands fa-microsoft"></i> Soft</li></a>
-            <a href=""><li><i class="fa-solid fa-cookie-bite"></i> Готовка</li></a>
-            <a href=""><li><i class="fa-solid fa-dice"></i> Разное</li></a>
+            <a href="{% url 'news:news_home' %}"><li><i class="fa-regular fa-newspaper"></i> Новости</li></a>
+            <a href="{% url 'games:games_home' %}"><li><i class="fa-solid fa-gamepad"></i> Игры</li></a>
+            <a href="{% url 'soft:soft_home' %}"><li><i class="fa-brands fa-microsoft"></i> Soft</li></a>
+            <a href="{% url 'cookie:cookie_home' %}"><li><i class="fa-solid fa-cookie-bite"></i> Готовка</li></a>
         </ul>
     </aside>
     <main>

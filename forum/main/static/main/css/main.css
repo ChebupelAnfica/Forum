@@ -1,10 +1,11 @@
 body {
-    background: #15202b;
+    background: #dadde0;
 }
+
 
 aside {
     float: left;
-    background: #18191a;
+    background: #15202b;
     width: 20%;
     padding: 3%;
     height: 100vh;
@@ -35,6 +36,23 @@ aside h3 {
     font-size: 30px;
 
 }
+
+back img {
+  background-color: transparent;
+  background-size: cover;
+  z-index: -1;
+  opacity: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 
 aside ul {
     text-decoration: none;
@@ -82,9 +100,29 @@ main .features p {max-width 400px; margin: 20px auto}
     text-align: left;
 }
 
+newsb img{
+  background-color: transparent;
+  background-size: cover;
+  z-index: -1;
+  opacity: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 
 form {
      margin-left: 30%;
      width: 500px;
      margin-top: 50px;
+}
+
+li {
+  list-style-type: none;
 }

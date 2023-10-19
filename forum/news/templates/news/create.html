@@ -1,7 +1,25 @@
-<h1>Create News</h1>
+{% extends 'main/layout.html'%}
 
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Submit</button>
-</form>
+{% load static %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <div class="features">
+      <h1>Создать доску</h1>
+        <form method="post">
+        <newsb>
+            <img src="{% static 'main/img/create_background.png' %}" alt="news_background">
+        </newsb>
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.content}}<br>
+            {{ form.pub_date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Подтвердить</button>
+        </form>
+    </div>
+
+{% endblock %}
+
+create_background

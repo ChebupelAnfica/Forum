@@ -1,0 +1,29 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<font size="5">
+    <div class="features">
+        <h1>Готовка</h1>
+        <a href="{% url 'cookie:create_cookie' %}"><button class="btn btn-warning"><i class="fas fa-plus-circle"></i>Создать доску</button></a>
+        <newsb>
+            <img src="{% static 'main/img/cookie_background.png' %}" alt="news_background">
+        </newsb>
+        {% if cookie %}
+            {% for el in cookie %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <a href="{% url 'cookie:cookie-detail' el.id %}" class="btn btn-warning">Читать подробнее</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Новостей нет!</p>
+        {% endif %}
+    </div>
+</font>
+
+{% endblock %}
+

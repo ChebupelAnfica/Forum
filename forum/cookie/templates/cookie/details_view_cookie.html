@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}{{ article }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <newsb>
+            <img src="{% static 'main/img/cookie_background.png' %}" alt="news_background">
+        </newsb>
+        <h1>{{ article }}</h1>
+        <p>{{ article.pub_date }}</p>
+        <p>{{article.content}}</p>
+        <a href="{% url 'cookie:cookie-update' article.id %}" class="btn btn-info">Редактировать</a>
+        <a href="{% url 'cookie:cookie-delete' article.id %}" class="btn btn-danger">Удалить</a>
+    </div>
+
+
+{% endblock %}

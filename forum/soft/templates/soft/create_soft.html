@@ -1,0 +1,24 @@
+{% extends 'main/layout.html'%}
+
+{% load static %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <div class="features">
+      <h1>Создать доску</h1>
+        <form method="post">
+        <newsb>
+            <img src="{% static 'main/img/create_background.png' %}" alt="news_background">
+        </newsb>
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.content}}<br>
+            {{ form.pub_date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Подтвердить</button>
+        </form>
+    </div>
+
+{% endblock %}
+

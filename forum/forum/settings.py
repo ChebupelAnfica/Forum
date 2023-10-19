@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'news',
+    'games',
+    'soft',
+    'cookie'
 ]
 
 MIDDLEWARE = [

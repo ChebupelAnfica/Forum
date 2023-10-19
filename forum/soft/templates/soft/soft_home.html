@@ -1,0 +1,29 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<font size="5">
+    <div class="features">
+        <h1>Программирование и soft</h1>
+        <a href="{% url 'soft:create_soft' %}"><button class="btn btn-warning"><i class="fas fa-plus-circle"></i>Создать доску</button></a>
+        <newsb>
+            <img src="{% static 'main/img/soft_background.png' %}" alt="news_background">
+        </newsb>
+        {% if soft %}
+            {% for el in soft %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <a href="{% url 'soft:soft-detail' el.id %}" class="btn btn-warning">Читать подробнее</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Новостей нет!</p>
+        {% endif %}
+    </div>
+</font>
+
+{% endblock %}
+
