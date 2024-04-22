@@ -8,7 +8,7 @@ aside {
     background: #15202b;
     width: 20%;
     padding: 3%;
-    height: 100vh;
+    height: 140vh;
     color: #fff;
     border-right: 5px solid #4d4d4d;
 }
@@ -22,8 +22,8 @@ aside img {
 
 
 aside .logo{
-    color: #70541b;
-    font-size: 30px;
+    color: #f2e5c9;
+    font-size: 25px;
     margin-left: 10px;
     font-weight: bold;
     position: relative;

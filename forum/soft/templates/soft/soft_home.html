@@ -2,12 +2,12 @@
 
 {% load static %}
 
-{% block title %}Новости{% endblock %}
+{% block title %}Задания{% endblock %}
 
 {% block content %}
 <font size="5">
     <div class="features">
-        <h1>Программирование и soft</h1>
+        <h1>Домашние задания</h1>
         <a href="{% url 'soft:create_soft' %}"><button class="btn btn-warning"><i class="fas fa-plus-circle"></i>Создать доску</button></a>
         <newsb>
             <img src="{% static 'main/img/soft_background.png' %}" alt="news_background">
